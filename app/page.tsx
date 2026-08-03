@@ -61,11 +61,24 @@ export default function Home() {
 
         <a className="featureCard" href={PSYCHRO_URL} target="_blank" rel="noreferrer">
           <div className="cardIndex">01</div>
-          <div className="miniChart">
-            <img
-              src="/psychrometric-chart.png"
-              alt="Psychrometric chart showing room, supply, and outside air conditions"
-            />
+          <div className="miniChart" role="img" aria-label="Basic pressure-enthalpy chart showing a four-stage refrigeration cycle">
+            <div className="phChart">
+              <span className="phAxis phPressure">Pressure</span>
+              <span className="phAxis phEnthalpy">Enthalpy</span>
+              <span className="phDome" />
+              <span className="cycleLine compression" />
+              <span className="cycleLine condensation" />
+              <span className="cycleLine expansion" />
+              <span className="cycleLine evaporation" />
+              <i className="cyclePoint pointOne">1</i>
+              <i className="cyclePoint pointTwo">2</i>
+              <i className="cyclePoint pointThree">3</i>
+              <i className="cyclePoint pointFour">4</i>
+              <small className="cycleLabel labelCompression">Compression</small>
+              <small className="cycleLabel labelCondensation">Condensation</small>
+              <small className="cycleLabel labelExpansion">Expansion</small>
+              <small className="cycleLabel labelEvaporation">Evaporation</small>
+            </div>
           </div>
           <div className="cardCopy">
             <p className="status"><span /> Live tool</p>
