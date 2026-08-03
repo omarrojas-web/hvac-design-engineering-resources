@@ -56,11 +56,6 @@ export default function Home() {
 
         <div className="heroGraphic phHero" role="img" aria-label="Basic pressure-enthalpy chart showing a four-stage refrigeration cycle">
           <PressureEnthalpyChart />
-          <div className="metricCard">
-            <small>REFRIGERATION CYCLE</small>
-            <strong>4 <span>STATES</span></strong>
-            <p>Compression · Condensation<br />Expansion · Evaporation</p>
-          </div>
         </div>
       </section>
 
