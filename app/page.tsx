@@ -77,9 +77,8 @@ export default function Home() {
         <div className="comingSoon">
           <p>MORE RESOURCES IN DEVELOPMENT</p>
           <div className="futureGrid">
-            <article><span>02</span><h3>Load Estimation</h3><p>Coming soon</p></article>
-            <article><span>03</span><h3>Airside Design</h3><p>Coming soon</p></article>
-            <article><span>04</span><h3>Reference Library</h3><p>Coming soon</p></article>
+            <article><span>02</span><h3>A2L Refrigerant Charge Calculations</h3><p>Coming soon</p></article>
+            <article><span>03</span><h3>Reference Library</h3><p>Coming soon</p></article>
           </div>
         </div>
       </section>
