@@ -33,11 +33,20 @@ export default function Home() {
         </div>
 
         <div className="heroGraphic">
-          <img
-            className="heroArtwork"
-            src="/hvac-equations.png"
-            alt="HVAC engineering equations and psychrometric process diagram"
-          />
+          <div className="refrigerationGraphic" role="img" aria-label="Minimal refrigeration cycle diagram">
+            <span className="cyclePipe pipeTop" />
+            <span className="cyclePipe pipeRight" />
+            <span className="cyclePipe pipeBottom" />
+            <span className="cyclePipe pipeLeft" />
+            <span className="cycleArrow arrowTop" />
+            <span className="cycleArrow arrowRight" />
+            <span className="cycleArrow arrowBottom" />
+            <span className="cycleArrow arrowLeft" />
+            <span className="cycleComponent compressorSymbol"><i /></span>
+            <span className="cycleComponent condenserSymbol"><i /><i /><i /><i /></span>
+            <span className="cycleComponent valveSymbol"><i /><b /></span>
+            <span className="cycleComponent evaporatorSymbol"><i /><i /><i /><i /></span>
+          </div>
         </div>
       </section>
 
