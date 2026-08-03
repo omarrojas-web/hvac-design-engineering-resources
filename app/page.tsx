@@ -5,28 +5,6 @@ function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
 
-function PressureEnthalpyChart() {
-  return (
-    <div className="phChart">
-      <span className="phAxis phPressure">Pressure</span>
-      <span className="phAxis phEnthalpy">Enthalpy</span>
-      <span className="phDome" />
-      <span className="cycleLine compression" />
-      <span className="cycleLine condensation" />
-      <span className="cycleLine expansion" />
-      <span className="cycleLine evaporation" />
-      <i className="cyclePoint pointOne">1</i>
-      <i className="cyclePoint pointTwo">2</i>
-      <i className="cyclePoint pointThree">3</i>
-      <i className="cyclePoint pointFour">4</i>
-      <small className="cycleLabel labelCompression">Compression</small>
-      <small className="cycleLabel labelCondensation">Condensation</small>
-      <small className="cycleLabel labelExpansion">Expansion</small>
-      <small className="cycleLabel labelEvaporation">Evaporation</small>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <main>
@@ -54,8 +32,12 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="heroGraphic phHero" role="img" aria-label="Basic pressure-enthalpy chart showing a four-stage refrigeration cycle">
-          <PressureEnthalpyChart />
+        <div className="heroGraphic">
+          <img
+            className="heroArtwork"
+            src="/hvac-equations.png"
+            alt="HVAC engineering equations and psychrometric process diagram"
+          />
         </div>
       </section>
 
