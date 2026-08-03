@@ -1,5 +1,5 @@
 const PSYCHRO_URL =
-  "https://psychro-chart-workspace.omar-rojas32913.chatgpt.site";
+  "https://psychro.omar-rojas.com";
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
