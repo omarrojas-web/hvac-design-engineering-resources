@@ -35,7 +35,7 @@ export default function Home() {
         <div className="heroGraphic">
           <img
             className="refrigerationArtwork"
-            src="/refrigeration-cycle.png"
+            src="/refrigeration-cycle-matched.png"
             alt="Refrigeration cycle diagram with compressor, condenser, expansion valve, and evaporator"
           />
         </div>
