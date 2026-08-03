@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <a className="wordmark" href="#top" aria-label="Omar Rojas HVAC resources home">
-          <span className="mark">OR</span>
+          <img className="brandLogo" src="/or-logo.png" alt="Omar Rojas logo" />
           <span>HVAC Resources</span>
         </a>
         <div className="navLinks">
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="wordmark"><span className="mark">OR</span><span>HVAC Resources</span></div>
+        <div className="wordmark"><img className="brandLogo" src="/or-logo.png" alt="Omar Rojas logo" /><span>HVAC Resources</span></div>
         <p>HVAC Design Engineering Resources by Omar Rojas</p>
         <a href="#top">Back to top ↑</a>
       </footer>
