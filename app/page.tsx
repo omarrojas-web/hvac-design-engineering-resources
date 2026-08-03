@@ -61,10 +61,11 @@ export default function Home() {
 
         <a className="featureCard" href={PSYCHRO_URL} target="_blank" rel="noreferrer">
           <div className="cardIndex">01</div>
-          <div className="miniChart" aria-hidden="true">
-            <div className="miniGrid">
-              <i /><i /><i /><i /><span /><b />
-            </div>
+          <div className="miniChart">
+            <img
+              src="/psychrometric-chart.png"
+              alt="Psychrometric chart showing room, supply, and outside air conditions"
+            />
           </div>
           <div className="cardCopy">
             <p className="status"><span /> Live tool</p>
