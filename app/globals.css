@@ -22,6 +22,7 @@ h1 em,h2 em { color:var(--blue); font-family:Georgia, serif; font-weight:400; }
 .primaryButton { margin-top:22px; display:inline-flex; align-items:center; gap:38px; padding:17px 20px; background:var(--ink); color:white; font:600 12px var(--font-geist-mono); text-transform:uppercase; letter-spacing:.08em; transition:.2s; }
 .primaryButton:hover { background:var(--blue); transform:translateY(-2px); }
 .heroGraphic { position:relative; height:470px; }
+.phHero .phChart { position:absolute; inset:28px 35px 50px 0; width:auto; min-height:0; aspect-ratio:auto; }
 .chartGrid { position:absolute; inset:28px 35px 50px 0; border-left:1px solid #9ea8b2; border-bottom:1px solid #9ea8b2; background-image:linear-gradient(#d9e0e4 1px,transparent 1px),linear-gradient(90deg,#d9e0e4 1px,transparent 1px); background-size:48px 48px; overflow:hidden; }
 .curve { position:absolute; width:110%; height:88%; left:-10%; bottom:-56%; border:2px solid var(--blue2); border-left-color:transparent; border-bottom-color:transparent; border-radius:50%; transform:rotate(-19deg); }
 .c2 { bottom:-43%; transform:rotate(-21deg); opacity:.8 }.c3{bottom:-28%;transform:rotate(-23deg);opacity:.6}.c4{bottom:-12%;transform:rotate(-25deg);opacity:.4}
@@ -40,6 +41,7 @@ h1 em,h2 em { color:var(--blue); font-family:Georgia, serif; font-weight:400; }
 .featureCard:hover { transform:translateY(-5px); box-shadow:0 24px 70px #0004; }
 .cardIndex { padding:30px 0 0 28px; font:600 11px var(--font-geist-mono); color:#83909c; }
 .miniChart { display:grid; place-items:center; padding:54px 50px 54px 10px; overflow:hidden; }
+.miniChart img { display:block; width:100%; height:auto; border:1px solid #d3dbe0; background:#fff; box-shadow:0 16px 38px #1b2a3d18; }
 .phChart { position:relative; width:100%; aspect-ratio:1.55; min-height:270px; border-left:1px solid #7f929f; border-bottom:1px solid #7f929f; background-image:linear-gradient(#dfe5e7 1px,transparent 1px),linear-gradient(90deg,#dfe5e7 1px,transparent 1px);background-size:46px 46px;overflow:hidden }
 .phAxis { position:absolute; font:600 9px var(--font-geist-mono); letter-spacing:.1em; color:#73818d; text-transform:uppercase; }.phPressure{left:-34px;top:45%;transform:rotate(-90deg)}.phEnthalpy{left:42%;bottom:8px}
 .phDome { position:absolute; left:23%; bottom:-35%; width:53%; height:112%; border:2px solid #4e8eb7; border-bottom:0; border-radius:50% 50% 0 0; transform:skewX(-7deg); opacity:.72 }

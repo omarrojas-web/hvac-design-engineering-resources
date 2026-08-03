@@ -5,6 +5,28 @@ function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
 
+function PressureEnthalpyChart() {
+  return (
+    <div className="phChart">
+      <span className="phAxis phPressure">Pressure</span>
+      <span className="phAxis phEnthalpy">Enthalpy</span>
+      <span className="phDome" />
+      <span className="cycleLine compression" />
+      <span className="cycleLine condensation" />
+      <span className="cycleLine expansion" />
+      <span className="cycleLine evaporation" />
+      <i className="cyclePoint pointOne">1</i>
+      <i className="cyclePoint pointTwo">2</i>
+      <i className="cyclePoint pointThree">3</i>
+      <i className="cyclePoint pointFour">4</i>
+      <small className="cycleLabel labelCompression">Compression</small>
+      <small className="cycleLabel labelCondensation">Condensation</small>
+      <small className="cycleLabel labelExpansion">Expansion</small>
+      <small className="cycleLabel labelEvaporation">Evaporation</small>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -32,20 +54,12 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="heroGraphic" aria-label="Abstract air properties diagram">
-          <div className="diagramLabel top">RELATIVE HUMIDITY</div>
-          <div className="diagramLabel side">HUMIDITY RATIO</div>
-          <div className="chartGrid">
-            <i className="curve c1" /><i className="curve c2" />
-            <i className="curve c3" /><i className="curve c4" />
-            <i className="processLine" />
-            <span className="stateDot d1" /><span className="stateDot d2" />
-          </div>
-          <div className="diagramLabel bottom">DRY-BULB TEMPERATURE</div>
+        <div className="heroGraphic phHero" role="img" aria-label="Basic pressure-enthalpy chart showing a four-stage refrigeration cycle">
+          <PressureEnthalpyChart />
           <div className="metricCard">
-            <small>DESIGN CONDITION</small>
-            <strong>75.0°<span>F</span></strong>
-            <p>50% RH · 64.9 gr/lb</p>
+            <small>REFRIGERATION CYCLE</small>
+            <strong>4 <span>STATES</span></strong>
+            <p>Compression · Condensation<br />Expansion · Evaporation</p>
           </div>
         </div>
       </section>
@@ -61,24 +75,11 @@ export default function Home() {
 
         <a className="featureCard" href={PSYCHRO_URL} target="_blank" rel="noreferrer">
           <div className="cardIndex">01</div>
-          <div className="miniChart" role="img" aria-label="Basic pressure-enthalpy chart showing a four-stage refrigeration cycle">
-            <div className="phChart">
-              <span className="phAxis phPressure">Pressure</span>
-              <span className="phAxis phEnthalpy">Enthalpy</span>
-              <span className="phDome" />
-              <span className="cycleLine compression" />
-              <span className="cycleLine condensation" />
-              <span className="cycleLine expansion" />
-              <span className="cycleLine evaporation" />
-              <i className="cyclePoint pointOne">1</i>
-              <i className="cyclePoint pointTwo">2</i>
-              <i className="cyclePoint pointThree">3</i>
-              <i className="cyclePoint pointFour">4</i>
-              <small className="cycleLabel labelCompression">Compression</small>
-              <small className="cycleLabel labelCondensation">Condensation</small>
-              <small className="cycleLabel labelExpansion">Expansion</small>
-              <small className="cycleLabel labelEvaporation">Evaporation</small>
-            </div>
+          <div className="miniChart">
+            <img
+              src="/psychrometric-chart.png"
+              alt="Psychrometric chart showing room, supply, and outside air conditions"
+            />
           </div>
           <div className="cardCopy">
             <p className="status"><span /> Live tool</p>
